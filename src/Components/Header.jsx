@@ -1,19 +1,23 @@
 import React from "react";
-import logo from "./Assets/Images/navbar.svg";
+import logo from "../Assets/Images/navbar.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <div className="flex justify-around p-2">
-      <div className="w-32">
+    <div className="flex justify-around align-middle p-2">
+      <div className="w-32 m-2">
         <img src={logo} />
       </div>
-      <div className="">
-        <ul className="flex justify-evenly p-2">
-          <li className="p-2">Home</li>
-          <li className="p-2">Service</li>
-          <li className="p-2">Pricing</li>
-          <li className="p-2">Join us</li>
-          <li className="p-2">Blog</li>
+      <div className="m-2">
+        <ul className="flex justify-between mx-4">
+          <li className="mx-4 text-[#476BC7]">Home</li>
+          <li className="mx-1">Service</li>
+          <FontAwesomeIcon className="w-3 mt-1" icon={faChevronDown} />
+          <li className="mx-4">Pricing</li>
+          <li className="mx-4">Join us</li>
+          <li className="mx-1">Blog</li>
+          <FontAwesomeIcon className="w-3 mt-1" icon={faChevronDown} />
         </ul>
       </div>
       <div>
